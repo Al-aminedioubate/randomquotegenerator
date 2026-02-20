@@ -12,7 +12,8 @@ async function getQuotes() {
 	});
 
 	if (!response.ok) {
-		alert("un probleme est survenu veuillez ressayer SVP!!!");
+		quotes.innerHTML = `\u275D An error happen, try again... \u275E`;
+		authors.textContent = `~ An error happen...`;
 	} else {
 		let data = await response.json();
 		quotes.innerHTML = `\u275D ${data.content}  \u275E`;
