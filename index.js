@@ -1,4 +1,4 @@
-//Debut de script
+//Declaration et initialisation des variables
 let quotes = document.getElementById("randomQuote");
 let authors = document.getElementById("author");
 
@@ -6,6 +6,7 @@ let btn = document.getElementById("getQuote");
 
 const URL = `https://api.quotable.io/random`;
 
+//la fonction permettant de recuperer les donnees a partir de notre API.
 async function getQuotes() {
 	const response = await fetch(URL, {
 		method: "GET",
