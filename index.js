@@ -15,7 +15,7 @@ async function getQuotes() {
 		alert("un probleme est survenu veuillez ressayer SVP!!!");
 	} else {
 		let data = await response.json();
-		quotes.innerHTML = data.content;
+		quotes.innerHTML = `"  ${data.content}  "`;
 		authors.textContent = ` ~  ${data.author}`;
 	}
 }
