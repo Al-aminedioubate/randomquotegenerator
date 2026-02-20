@@ -16,7 +16,7 @@ async function getQuotes() {
 	} else {
 		let data = await response.json();
 		quotes.innerHTML = data.content;
-		authors.textContent = data.author;
+		authors.textContent = ` ~  ${data.author}`;
 	}
 }
 
