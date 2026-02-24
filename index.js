@@ -22,4 +22,5 @@ async function getQuotes() {
 	}
 }
 
+//Evenement pour generer notre quotes
 btn.addEventListener("click", getQuotes);
